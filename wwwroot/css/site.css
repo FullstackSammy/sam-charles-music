@@ -1,39 +1,69 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Italiana&display=swap');
 
 /* Animations & main things such as Body */
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
 
-* {
+.full-vid {
+    position: relative;
+    bottom: -20%;
+    left: 0;
+    min-width: 100% !important;
+    max-width: 100% !important;
+}
+
+body {
     margin: 0;
     padding: 0;
-    font-family: 'Italiana', sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: none;
+    -webkit-font-smoothing: antialiased !important;
+    font-family: 'source serif 4',serif;
+    background-color: #000;
+    color: white;
 }
-
-@keyframes hero-zoom {
-    from {
-        transform: scale(1);
-    }
-
-    to {
-        transform: scale(1.2);
-    }
-}
-
 
 /* Sections */
 
-section {
-    min-height: 100vh;
+.navbar {
+    background-color: rgba(0,0,0,0.5) !important;
 }
+
+.navbar-brand {
+    font-size: 25px;
+}
+
+.nav-link:hover, .navbar-brand:hover {
+    color: burlywood !important;
+}
+
+section {
+    height: 100vh;
+}
+
+#home {
+    position: absolute;
+    bottom: -0%;
+    left: 0;
+    min-width: 100% !important;
+    max-width: 100% !important;
+}
+
 
 /* Elements */
 
+
 h1 {
     font-family: 'Cinzel', sans-serif;
-    margin-top: 25%;
     animation-name: hero-zoom;
     animation-duration: 4s;
     animation-fill-mode: forwards;
+    color: whitesmoke !important;
 }
+
+
 
 html {
   font-size: 14px;
