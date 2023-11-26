@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/SamCharles.styles.css" asp-append-version="true" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.0/css/all.css">
 </head>
 <body>
     <header>
@@ -17,8 +19,8 @@
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-center">
+                    <ul class="navbar-nav flex-grow-1 justify-content-center">
                         <li class="nav-item">
                             <a class="nav-link" style="color: whitesmoke !important;" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
@@ -26,10 +28,36 @@
                             <a class="nav-link" style="color: whitesmoke !important;" href="#music">Music</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" style="color: whitesmoke !important;" asp-area="" asp-controller="Home" asp-action="Privacy">News</a>
+                            <a class="nav-link" style="color: whitesmoke !important;" href="#news">News</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" style="color: whitesmoke !important;" asp-area="" asp-controller="Home" asp-action="Privacy">Contact</a>
+                            <a class="nav-link" style="color: whitesmoke !important;" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                    <ul class="nav justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://facebook.com/samcharlesmusic" target="_blank"
+                               aria-label="external link that will take you to our facebook">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://instagram.com/samcharlesmusiic" target="_blank"
+                               aria-label="external link that will take you to our instagram">
+                                <i class="fa-brands fa-square-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://open.spotify.com/artist/6OQG9J5u01KiuGWV7jkzcq?si=NJGY2melTfCcedkwVkMgaA" target="_blank"
+                               aria-label="external link that will take you to our twitter">
+                                <i class="fa-brands fa-spotify"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://youtube.com" target="_blank"
+                               aria-label="external link that will take you to our youtube">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -39,7 +67,7 @@
         <div class="video">
             <video src="./videos/header-vid.mp4" poster="https://morganwallen.com//wp-content/themes/mw2020/images/video-image_riser.jpg" data-object-fit="cover" class="full-vid" autoplay="" playsinline="" muted="" loop="" preload=""></video>
         </div>
-    <div class="container">
+    <div class="container-fluid" style="margin 0; padding: 0;">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
